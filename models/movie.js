@@ -1,8 +1,7 @@
+const mongoose = require('mongoose');
 
-let mongoose = require('mongoose');
-
-// Create a model class
-let movieModel = mongoose.Schema(
+// Movie schema definition
+const movieSchema = mongoose.Schema(
     {
         Title: String,
         Synopsis: String,
@@ -15,4 +14,4 @@ let movieModel = mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model('Movie', movieModel);
+module.exports = mongoose.model('Movie', movieSchema);

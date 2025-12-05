@@ -1,7 +1,6 @@
-var express = require('express');
-var router = express.Router();
-
-let movieController = require('../controllers/movie');
+const express = require('express');
+const router = express.Router();
+const movieController = require('../controllers/movie');
 
 // Router for lists movies function
 router.get('/list', movieController.movieList);
